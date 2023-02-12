@@ -1,3 +1,28 @@
 body{
-    background-color: #faf8fa;
+    background-color: #dad9da;
+}
+
+#search-result{
+    background-color: #fff;
+    list-style: none;
+    font-family: var(--bs-font-sans-serif);
+    border-radius: 1rem;
+    margin: 0.5rem;
+    /* background-color: bisque; */
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.fav-icon{
+    font-size: 1.1rem;
+}
+#meal-img{
+    width: 25%;
+    height: 25%;
+    border-radius: 1rem;
+}
+#meal-instruction{
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    line-height: 1.5rem;
 }
