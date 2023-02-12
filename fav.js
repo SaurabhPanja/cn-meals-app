@@ -7,5 +7,15 @@
 
     document.querySelector("#fav-meals").innerHTML = favMealsEle;
 
+    document.querySelectorAll(".btn-danger").forEach(
+        btn => btn.addEventListener("click", function(e){
+            const mealId = this.parentNode.querySelector("a").href.split("=")[1];
+            const favMeals = JSON.parse(localStorage.getItem("favMeals")) || {};
+            delete favMeals[mealId];
+            localStorage.setItem("favMeals", JSON.stringify(favMeals));
+            this.parentNode.remove();
+        })
+    );
+
   })();
   
