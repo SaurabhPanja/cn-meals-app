@@ -27,6 +27,7 @@
             }, "");
             searchResult.innerHTML = mealsEle;
 
+            //logic to add meal to favorite list
             document.querySelectorAll(".fav-icon").forEach(
                 favIcon => favIcon.addEventListener("click", function(e){
                     const mealId = this.parentNode.querySelector("a").href.split("=")[1];
